@@ -1,7 +1,7 @@
 ---
 name: Ali Hamza Malik
-tagline: Formal Verification | Security | Quantum Networks | 
-bio: Research scientist specializing in formal verification, automated reasoning, and security. Passionate about building provably correct systems and advancing the state of program verification.
+tagline: Formal Verification | Security | Quantum Networks
+bio: PhD student at University of Massachusetts Amherst working on quantum computers and quantum systems, focusing on security aspects. Researching formal analysis of quantum protocols to uncover security vulnerabilities and develop automated verification techniques.
 email: ahmalik@umass.edu
 location: Amherst, MA
 profileImage: /img/ali.jpg
@@ -11,7 +11,8 @@ socials:
   # scholar: https://scholar.google.com/citations?user=alihamzamalik
 ---
 
-I develop novel techniques for automated reasoning and formal verification, with applications in security-critical systems.
+Hi, I am PhD student @ University of Massachusetts Amherst. I work on quantum computers and quantum systems, focusing on security aspect with Dr. Muhammad Taqi Raza in [Khwarizmi Lab](https://khwarizmilab.github.io/).
 
-My work bridges theory and practice, creating tools that make formal methods accessible to real-world software development.
+Before joining UMass, I completed my Bachelor's in Electrical Engineering (BSEE) from [National University of Sciences and Technology (NUST)](https://nust.edu.pk/), Pakistan in 2023.
 
+I am engaged in the examination of quantum protocols pertaining to network communication, focusing on conducting formal analyses to uncover security vulnerabilities. My research endeavors lay the groundwork for devising efficient techniques to automate protocol analysis, ensuring the security guarantees provided by these protocols.
