@@ -4,6 +4,10 @@ import rehypeRaw from 'rehype-raw';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 };
 
@@ -15,4 +19,3 @@ const withMDX = createMDX({
 });
 
 export default withMDX(nextConfig);
-

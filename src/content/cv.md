@@ -1,8 +1,8 @@
 ---
 contact:
-  email: ali.malik@university.edu
+  email: ahmalik@umass.edu
   location: Location, Country
-  website: alihamzamalik.com
+  website: alihamzamalik.me
 
 education:
   - degree: Ph.D. in Computer Science
