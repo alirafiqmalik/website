@@ -89,6 +89,17 @@ export default function HomePage() {
                 <GraduationCap size={20} />
               </a>
             )}
+            {personal.socials?.website && (
+              <a
+                href={personal.socials.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground transition-colors hover:text-primary"
+                aria-label="Website"
+              >
+                <Globe size={20} />
+              </a>
+            )}
           </div>
         </div>
 

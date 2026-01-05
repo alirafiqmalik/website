@@ -56,6 +56,7 @@ export interface Post {
 export interface HistoryItem {
   slug: string;
   year: string;
+  month: string;
   title: string;
   type: 'Professional' | 'Education' | 'Award';
   organization: string;

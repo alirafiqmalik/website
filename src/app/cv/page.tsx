@@ -5,26 +5,15 @@ export default function CVPage() {
   const cvContent = getPageContent<CVData>('cv.md');
   const cv = cvContent.data;
 
-  return (
-    <div className="mx-auto max-w-5xl px-6 py-12">
-      <div className="mb-12">
-        <h1 className="mb-4 text-4xl text-foreground">Curriculum Vitae</h1>
-        <div className="flex flex-wrap gap-4 text-muted-foreground">
-          <span>{cv.contact.email}</span>
-          <span>•</span>
-          <span>{cv.contact.location}</span>
-          {cv.contact.website && (
-            <>
-              <span>•</span>
-              <a href={`https://${cv.contact.website}`} className="text-primary hover:underline">
-                {cv.contact.website}
-              </a>
-            </>
-          )}
-        </div>
-      </div>
+  // Get section order from the cv.md file structure, excluding contact
+  const sectionOrder = Object.keys(cv).filter(
+    key => key !== 'contact' && cv[key as keyof CVData]
+  );
 
-      {/* Education */}
+  
+
+  const sections: Record<string, () => React.JSX.Element> = {
+    education: () => (
       <section className="mb-12">
         <h2 className="mb-6 border-b border-border pb-2 text-2xl text-foreground">Education</h2>
         <div className="space-y-6">
@@ -46,8 +35,8 @@ export default function CVPage() {
           ))}
         </div>
       </section>
-
-      {/* Experience */}
+    ),
+    experience: () => (
       <section className="mb-12">
         <h2 className="mb-6 border-b border-border pb-2 text-2xl text-foreground">Experience</h2>
         <div className="space-y-8">
@@ -68,8 +57,8 @@ export default function CVPage() {
           ))}
         </div>
       </section>
-
-      {/* Skills */}
+    ),
+    skills: () => (
       <section className="mb-12">
         <h2 className="mb-6 border-b border-border pb-2 text-2xl text-foreground">Skills</h2>
         <div className="space-y-4">
@@ -90,8 +79,8 @@ export default function CVPage() {
           ))}
         </div>
       </section>
-
-      {/* Awards */}
+    ),
+    awards: () => (
       <section className="mb-12">
         <h2 className="mb-6 border-b border-border pb-2 text-2xl text-foreground">Awards & Honors</h2>
         <div className="space-y-4">
@@ -106,7 +95,53 @@ export default function CVPage() {
           ))}
         </div>
       </section>
+    ),
+    interests: () => (
+      <section className="mb-12">
+        <h2 className="mb-6 border-b border-border pb-2 text-2xl text-foreground">Interests</h2>
+        <ul className="list-inside list-disc space-y-2 text-card-foreground">
+          {cv.interests?.map((interest: string, index: number) => (
+            <li key={index}>{interest}</li>
+          ))}
+        </ul>
+      </section>
+    ),
+  };
+
+  return (
+    <div className="mx-auto max-w-5xl px-6 py-12">
+      {/* Contact section always renders at top */}
+      <div className="mb-12">
+        <h1 className="mb-4 text-4xl text-foreground">Curriculum Vitae</h1>
+        <div className="flex flex-wrap gap-4 text-muted-foreground">
+          <span>{cv.contact.email}</span>
+          <span>•</span>
+          <span>{cv.contact.location}</span>
+          {cv.contact.website && (
+            <>
+              <span>•</span>
+              <a href={`https://${cv.contact.website}`} className="text-primary hover:underline">
+                {cv.contact.website}
+              </a>
+            </>
+          )}
+        </div>
+        <div className="mt-4">
+          <a
+            href="/pdf/AliMalik_Resume.pdf"
+            download
+            className="inline-block rounded-md border border-primary bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+
+      {/* Render sections in the order they appear in cv.md */}
+      {sectionOrder.map((sectionKey) => {
+        const SectionComponent = sections[sectionKey];
+        return SectionComponent ? <div key={sectionKey}>{SectionComponent()}</div> : null;
+      })}
     </div>
   );
 }
-

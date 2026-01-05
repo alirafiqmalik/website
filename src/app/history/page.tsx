@@ -1,11 +1,25 @@
 import { getAllContent } from '@/lib/content';
 import type { HistoryItem } from '@/types';
 
+const monthOrder: Record<string, number> = {
+  'January': 1, 'February': 2, 'March': 3, 'April': 4,
+  'May': 5, 'June': 6, 'July': 7, 'August': 8,
+  'September': 9, 'October': 10, 'November': 11, 'December': 12
+};
+
 export default function HistoryPage() {
   const historyItems = getAllContent<HistoryItem>('history');
   
-  // Sort by year descending
-  historyItems.sort((a, b) => b.data.year.localeCompare(a.data.year));
+  // Sort by year and month descending (latest to oldest)
+  historyItems.sort((a, b) => {
+    const yearA = parseInt(a.data.year);
+    const yearB = parseInt(b.data.year);
+    if (yearA !== yearB) return yearB - yearA;
+    
+    const monthA = monthOrder[a.data.month] || 0;
+    const monthB = monthOrder[b.data.month] || 0;
+    return monthB - monthA;
+  });
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -37,10 +51,11 @@ export default function HistoryPage() {
         <div className="space-y-8">
           {historyItems.map(({ data: item }) => (
             <div key={item.slug} className="relative grid grid-cols-1 gap-4 md:grid-cols-[80px_1fr] md:gap-8">
-              {/* Year marker */}
+              {/* Date marker */}
               <div className="flex items-start justify-center">
-                <div className="relative z-10 rounded-full bg-background px-3 py-1 text-lg font-medium text-primary">
-                  {item.year}
+                <div className="relative z-10 rounded-full bg-background px-3 py-1 text-center text-sm font-medium text-primary">
+                  <div>{item.month.slice(0, 3)}</div>
+                  <div className="text-lg">{item.year}</div>
                 </div>
               </div>
 
@@ -71,4 +86,3 @@ export default function HistoryPage() {
     </div>
   );
 }
-

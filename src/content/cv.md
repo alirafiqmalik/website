@@ -6,17 +6,17 @@ contact:
   linkedin: linkedin.com/in/alihamzamalik
   github: github.com/alirafiqmalik
 
-education:
-  - degree: PhD in Electrical & Computer Engineering
-    institution: University of Massachusetts Amherst
-    location: Amherst, MA
-    year: 2023 - 2028 (Expected)
-    details: "Teaching Assistant: ECE 304 (Junior Design Project), ECE 361 (Fundamentals of Electrical Engineering)"
-  - degree: BE in Electrical Engineering & Minor in Computer Science
-    institution: National University of Sciences and Technology
-    location: Islamabad, Pakistan
-    year: 2019 - 2023
-    details: "Capstone: Logic-Locking Security Evaluation - End-to-end pipeline for security-cost tradeoffs of hardware obfuscation on RISC-V designs. Funded Project: Multi-Agent Aerial Swarm - Grant-funded research on event-driven, low-latency control for multi-UAV swarms."
+skills:
+  - category: Programming Languages
+    skills: [Python, C/C++, Julia, Rust, JavaScript, Kotlin, MATLAB]
+  - category: Generative AI/ML
+    skills: [Huggingface, Transformers, PyTorch, TensorFlow, Keras, SFT, DPO, RLHF, RL-Automated Feedback, LoRA, QLoRA, RAG, Agentic AI, Specification-Aware Fine-Tuning]
+  - category: Formal Methods
+    skills: [Symbolic Execution, Linear Temporal Logic (LTL), Finite State Automata (FSA), Model Checking, SMT encoding, TLA+, nuXMV, STORM, Coq, Lean]
+  - category: DevOps & Cloud
+    skills: [Git/GitHub, Docker, Shell Scripting, CMake, AWS (EC2, Route 53), MongoDB, N8N]
+
+
 
 experience:
   - title: Graduate Research Assistant
@@ -28,7 +28,7 @@ experience:
       - Applied formal analysis to U.S. ACH banking systems to uncover security vulnerabilities in the access control and authorization of ACH direct payments
   - title: Undergraduate Research Assistant
     company: Communication Systems and Networks Lab, NUST
-    location: Islamabad, Pakistan
+    location: Islamabad
     year: September 2022 - July 2023
     responsibilities:
       - Collaborated in the design and implementation of an event-driven coordination protocol for multi-agent aerial swarms on Raspberry Pi companion computers with Pixhawk/ArduPilot flight controllers
@@ -36,28 +36,32 @@ experience:
       - Engineered a mesh networking stack (IEEE 802.11, UDP/TCP, MAVLink) to enable fault-tolerant communication for control coordination in real-time (under 100 ms latency)
   - title: Hardware Security Intern
     company: IC Design Lab, NUST
-    location: Islamabad, Pakistan
+    location: Islamabad
     year: June 2022 - September 2022
     responsibilities:
       - Led the design of ENIGMA, a Python framework that automatically inserts logic-locking defenses into hardware designs, protecting IP designs from unauthorized use and reverse engineering
       - Designed a parametrized key-insertion system (64–256 bits) with user-defined cell libraries to analyze the impact of logic obfuscation on a chip's area, delay, and power
   - title: Machine Learning Intern
     company: TUKL Deep Learning Lab, NUST
-    location: Islamabad, Pakistan
+    location: Islamabad
     year: June 2021 - September 2021
     responsibilities:
       - Implemented an automated pipeline to extract, structure, and preprocess raw court documents
       - Fine-tuned Transformer-based models for court-case outcome prediction achieving 83% accuracy
 
-skills:
-  - category: Programming Languages
-    skills: [Python, C/C++, Julia, Rust, JavaScript, Kotlin, MATLAB]
-  - category: Generative AI/ML
-    skills: [Huggingface, Transformers, PyTorch, TensorFlow, Keras, SFT, DPO, RLHF, RL-Automated Feedback, LoRA, QLoRA, RAG, Agentic AI, Specification-Aware Fine-Tuning]
-  - category: Formal Methods
-    skills: [Symbolic Execution, Linear Temporal Logic (LTL), Finite State Automata (FSA), Model Checking, SMT encoding, TLA+, nuXMV, STORM, Coq, Lean]
-  - category: DevOps & Cloud
-    skills: [Git/GitHub, Docker, Shell Scripting, CMake, AWS (EC2, Route 53), MongoDB, N8N]
+
+
+education:
+  - degree: PhD in Electrical & Computer Engineering
+    institution: University of Massachusetts Amherst
+    location: Amherst, MA
+    year: Expected 2028
+    details: "Teaching Assistant: ECE 304 (Junior Design Project), ECE 361 (Fundamentals of Electrical Engineering)"
+  - degree: BE in Electrical Engineering & Minor in Computer Science
+    institution: National University of Sciences and Technology
+    location: Islamabad
+    year: Graduated 2023
+    details: "Capstone: Logic-Locking Security Evaluation - End-to-end pipeline for security-cost tradeoffs of hardware obfuscation on RISC-V designs. Funded Project: Multi-Agent Aerial Swarm - Grant-funded research on event-driven, low-latency control for multi-UAV swarms."
 
 awards:
   - year: "2023"

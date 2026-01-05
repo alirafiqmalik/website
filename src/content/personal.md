@@ -9,6 +9,7 @@ socials:
   github: https://github.com/alirafiqmalik
   linkedin: https://linkedin.com/in/alihamzamalik
   # scholar: https://scholar.google.com/citations?user=alihamzamalik
+  website: alihamzamalik.me
 ---
 
 Hi, I am PhD student @ University of Massachusetts Amherst. I work on quantum computers and quantum systems, focusing on security aspect with Dr. Muhammad Taqi Raza in [Khwarizmi Lab](https://khwarizmilab.github.io/).
