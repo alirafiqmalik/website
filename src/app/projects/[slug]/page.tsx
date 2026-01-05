@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getContentBySlug, getAllSlugs } from '@/lib/content';
 import type { Project } from '@/types';
-import { ArrowLeft, Github, ExternalLink, FileText, BookOpen } from 'lucide-react';
+import { ArrowLeft, ExternalLink, FileText, BookOpen } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { MDXContent } from '@/components/mdx';
 
 interface PageProps {
@@ -139,7 +140,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-card-foreground transition-colors hover:border-primary hover:text-primary"
               >
-                <Github size={18} />
+                <FaGithub size={18} />
                 GitHub
               </a>
             )}

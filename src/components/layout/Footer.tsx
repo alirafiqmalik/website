@@ -1,4 +1,5 @@
-import { Github, Linkedin, GraduationCap } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { getPageContent } from '@/lib/content';
 import type { PersonalInfo } from '@/types';
 
@@ -38,7 +39,7 @@ export function Footer() {
                   className="text-muted-foreground transition-colors hover:text-primary"
                   aria-label="GitHub"
                 >
-                  <Github size={20} />
+                  <FaGithub size={20} />
                 </a>
               )}
               {personal?.socials?.linkedin && (
@@ -49,7 +50,7 @@ export function Footer() {
                   className="text-muted-foreground transition-colors hover:text-primary"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin size={20} />
+                  <FaLinkedin size={20} />
                 </a>
               )}
               {personal?.socials?.scholar && (

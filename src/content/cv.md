@@ -49,6 +49,13 @@ experience:
       - Implemented an automated pipeline to extract, structure, and preprocess raw court documents
       - Fine-tuned Transformer-based models for court-case outcome prediction achieving 83% accuracy
 
+awards:
+  - year: "2023"
+    title: Rector's Gold Medal
+    details: Awarded for best senior project, National University of Sciences & Technology
+  - year: "2022"
+    title: 2nd Place, CSAW'22 Logic Locking Competition
+    details: Global security hackathon competition, NYU School of Engineering
 
 
 education:
@@ -63,13 +70,6 @@ education:
     year: Graduated 2023
     details: "Capstone: Logic-Locking Security Evaluation - End-to-end pipeline for security-cost tradeoffs of hardware obfuscation on RISC-V designs. Funded Project: Multi-Agent Aerial Swarm - Grant-funded research on event-driven, low-latency control for multi-UAV swarms."
 
-awards:
-  - year: "2023"
-    title: Rector's Gold Medal
-    details: Awarded for best senior project, National University of Sciences & Technology
-  - year: "2022"
-    title: 2nd Place, CSAW'22 Logic Locking Competition
-    details: Global security hackathon competition, NYU School of Engineering
 
 interests:
   - Reading books (fiction and non-fiction)

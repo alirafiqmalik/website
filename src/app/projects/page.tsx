@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { getAllContent } from '@/lib/content';
 import type { Project } from '@/types';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 
 export default function ProjectsPage() {
   const projects = getAllContent<Project>('projects');
@@ -100,7 +101,7 @@ export default function ProjectsPage() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-card-foreground transition-colors hover:text-primary"
                   >
-                    <Github size={16} />
+                    <FaGithub size={16} />
                   </a>
                 )}
                 {project.links?.demo && (

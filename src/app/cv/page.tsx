@@ -1,5 +1,8 @@
 import { getPageContent } from '@/lib/content';
 import type { CVData } from '@/types';
+import { Mail, MapPin, Globe, Download } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 
 export default function CVPage() {
   const cvContent = getPageContent<CVData>('cv.md');
@@ -113,25 +116,86 @@ export default function CVPage() {
       {/* Contact section always renders at top */}
       <div className="mb-12">
         <h1 className="mb-4 text-4xl text-foreground">Curriculum Vitae</h1>
-        <div className="flex flex-wrap gap-4 text-muted-foreground">
-          <span>{cv.contact.email}</span>
-          <span>•</span>
-          <span>{cv.contact.location}</span>
-          {cv.contact.website && (
-            <>
-              <span>•</span>
-              <a href={`https://${cv.contact.website}`} className="text-primary hover:underline">
-                {cv.contact.website}
+        
+        {/* Contact Info and Social Links in one line */}
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div className="flex items-center gap-2">
+              <Mail size={14} />
+              <a href={`mailto:${cv.contact.email}`} className="hover:text-primary">
+                {cv.contact.email}
               </a>
-            </>
-          )}
-        </div>
-        <div className="mt-4">
+            </div>
+            
+            {cv.contact.website && (
+              <div className="flex items-center gap-2">
+                <Globe size={14} />
+                <a
+                  href={`https://${cv.contact.website}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  {cv.contact.website}
+                </a>
+              </div>
+            )}
+            
+            {cv.contact.linkedin && (
+              <div className="flex items-center gap-2">
+                <FaLinkedin size={14} />
+                <a
+                  href={`https://${cv.contact.linkedin}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  {cv.contact.linkedin}
+                </a>
+              </div>
+            )}
+            
+            {cv.contact.github && (
+              <div className="flex items-center gap-2">
+                <FaGithub size={14} />
+                <a
+                  href={`https://${cv.contact.github}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary"
+                >
+                  {cv.contact.github}
+                </a>
+              </div>
+            )}
+            
+            {/* Social Links */}
+            <div className="flex items-center gap-3">
+              {cv.contact.scholar && (
+                <a
+                  href={`https://${cv.contact.scholar}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                  aria-label="Google Scholar"
+                >
+                  <GraduationCap size={20} />
+                </a>
+              )}
+            </div>
+
+            {/* <div className="flex items-center gap-2">
+              <MapPin size={14} />
+              <span>{cv.contact.location}</span>
+            </div> */}
+          </div>
+
           <a
             href="/pdf/AliMalik_Resume.pdf"
             download
-            className="inline-block rounded-md border border-primary bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+            className="inline-flex items-center gap-2 rounded-md border border-primary bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
           >
+            <Download size={16} />
             Download Resume
           </a>
         </div>

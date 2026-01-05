@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Github, Linkedin, GraduationCap, Mail, MapPin } from 'lucide-react';
+import { Github, Linkedin,GraduationCap, Mail, MapPin, Globe } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { getPageContent } from '@/lib/content';
 import type { PersonalInfo, NewsItem, HomeData } from '@/types';
 
@@ -64,7 +65,7 @@ export default function HomePage() {
                 className="text-muted-foreground transition-colors hover:text-primary"
                 aria-label="GitHub"
               >
-                <Github size={20} />
+                <FaGithub size={20} />
               </a>
             )}
             {personal.socials?.linkedin && (
@@ -75,7 +76,7 @@ export default function HomePage() {
                 className="text-muted-foreground transition-colors hover:text-primary"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={20} />
+                <FaLinkedin size={20} />
               </a>
             )}
             {personal.socials?.scholar && (
