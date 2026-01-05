@@ -1,79 +1,78 @@
 ---
 contact:
   email: ahmalik@umass.edu
-  location: Location, Country
+  location: Amherst, MA
   website: alihamzamalik.me
+  linkedin: linkedin.com/in/alihamzamalik
+  github: github.com/alirafiqmalik
 
 education:
-  - degree: Ph.D. in Computer Science
-    institution: Stanford University
-    location: Stanford, CA
-    year: 2020 - 2025
-    details: "Thesis: Automated Verification of Security Properties in Distributed Systems"
-    advisor: "Advisor: Prof. Jane Smith"
-  - degree: M.S. in Computer Science
-    institution: Carnegie Mellon University
-    location: Pittsburgh, PA
-    year: 2018 - 2020
-    details: "Focus: Formal Methods and Programming Languages"
-  - degree: B.S. in Computer Science
-    institution: University of California, Berkeley
-    location: Berkeley, CA
-    year: 2014 - 2018
-    details: "Graduated Summa Cum Laude, GPA: 3.95/4.0"
+  - degree: PhD in Electrical & Computer Engineering
+    institution: University of Massachusetts Amherst
+    location: Amherst, MA
+    year: 2023 - 2028 (Expected)
+    details: "Teaching Assistant: ECE 304 (Junior Design Project), ECE 361 (Fundamentals of Electrical Engineering)"
+  - degree: BE in Electrical Engineering & Minor in Computer Science
+    institution: National University of Sciences and Technology
+    location: Islamabad, Pakistan
+    year: 2019 - 2023
+    details: "Capstone: Logic-Locking Security Evaluation - End-to-end pipeline for security-cost tradeoffs of hardware obfuscation on RISC-V designs. Funded Project: Multi-Agent Aerial Swarm - Grant-funded research on event-driven, low-latency control for multi-UAV swarms."
 
 experience:
-  - title: Research Scientist
-    company: Google Research
-    location: Mountain View, CA
-    year: 2023 - Present
-    responsibilities:
-      - Leading research on automated verification of distributed systems
-      - Developing novel SMT-based approaches for security analysis
-      - Published 3 papers at top-tier conferences (POPL, CCS, PLDI)
-      - Mentoring junior researchers and interns
-  - title: Research Intern
-    company: Microsoft Research
-    location: Redmond, WA
-    year: Summer 2022
-    responsibilities:
-      - Developed tools for automated bug finding in cloud infrastructure
-      - Collaborated with product teams to integrate formal methods into CI/CD
-      - Published work at SOSP 2023
   - title: Graduate Research Assistant
-    company: Stanford University
-    location: Stanford, CA
-    year: 2020 - 2023
+    company: Khwarizmi Lab, University of Massachusetts Amherst
+    location: Amherst, MA
+    year: September 2023 - Present
     responsibilities:
-      - Conducted research on type systems and program verification
-      - Teaching assistant for graduate-level formal methods course
-      - Advised undergraduate researchers on verification projects
+      - Built a verification framework to analyze quantum key distribution (QKD) protocols; identified four new vulnerabilities arising from quantum–classical interactions
+      - Applied formal analysis to U.S. ACH banking systems to uncover security vulnerabilities in the access control and authorization of ACH direct payments
+  - title: Undergraduate Research Assistant
+    company: Communication Systems and Networks Lab, NUST
+    location: Islamabad, Pakistan
+    year: September 2022 - July 2023
+    responsibilities:
+      - Collaborated in the design and implementation of an event-driven coordination protocol for multi-agent aerial swarms on Raspberry Pi companion computers with Pixhawk/ArduPilot flight controllers
+      - Designed and optimized leader–follower formation control (flock, line, helical) with dynamic reconfiguration, achieving under 2 min formation-switching latency
+      - Engineered a mesh networking stack (IEEE 802.11, UDP/TCP, MAVLink) to enable fault-tolerant communication for control coordination in real-time (under 100 ms latency)
+  - title: Hardware Security Intern
+    company: IC Design Lab, NUST
+    location: Islamabad, Pakistan
+    year: June 2022 - September 2022
+    responsibilities:
+      - Led the design of ENIGMA, a Python framework that automatically inserts logic-locking defenses into hardware designs, protecting IP designs from unauthorized use and reverse engineering
+      - Designed a parametrized key-insertion system (64–256 bits) with user-defined cell libraries to analyze the impact of logic obfuscation on a chip's area, delay, and power
+  - title: Machine Learning Intern
+    company: TUKL Deep Learning Lab, NUST
+    location: Islamabad, Pakistan
+    year: June 2021 - September 2021
+    responsibilities:
+      - Implemented an automated pipeline to extract, structure, and preprocess raw court documents
+      - Fine-tuned Transformer-based models for court-case outcome prediction achieving 83% accuracy
 
 skills:
   - category: Programming Languages
-    skills: [OCaml, Haskell, Rust, Python, TypeScript, C++, Coq, Agda]
-  - category: Verification Tools
-    skills: [Z3, CVC5, Dafny, F*, TLA+, CBMC, Spin, Isabelle]
-  - category: Research Areas
-    skills: [Formal Methods, Program Analysis, Security, Distributed Systems]
-  - category: Tools & Frameworks
-    skills: [LLVM, Git, Docker, AWS, LaTeX, Linux]
+    skills: [Python, C/C++, Julia, Rust, JavaScript, Kotlin, MATLAB]
+  - category: Generative AI/ML
+    skills: [Huggingface, Transformers, PyTorch, TensorFlow, Keras, SFT, DPO, RLHF, RL-Automated Feedback, LoRA, QLoRA, RAG, Agentic AI, Specification-Aware Fine-Tuning]
+  - category: Formal Methods
+    skills: [Symbolic Execution, Linear Temporal Logic (LTL), Finite State Automata (FSA), Model Checking, SMT encoding, TLA+, nuXMV, STORM, Coq, Lean]
+  - category: DevOps & Cloud
+    skills: [Git/GitHub, Docker, Shell Scripting, CMake, AWS (EC2, Route 53), MongoDB, N8N]
 
 awards:
-  - year: "2024"
-    title: ACM SIGPLAN Distinguished Paper Award
-    details: For work on automated verification of cryptographic protocols
+  - year: "2023"
+    title: Rector's Gold Medal
+    details: Awarded for best senior project, National University of Sciences & Technology
   - year: "2022"
-    title: POPL Best Paper Award
-    details: For scalable formal verification of distributed systems
-  - year: "2021"
-    title: Google PhD Fellowship
-    details: Programming Languages and Software Engineering
-  - year: "2020"
-    title: NSF Graduate Research Fellowship
-    details: Full funding for doctoral studies
-  - year: "2018"
-    title: Berkeley CS Outstanding Graduate
-    details: Top 1% of graduating class
+    title: 2nd Place, CSAW'22 Logic Locking Competition
+    details: Global security hackathon competition, NYU School of Engineering
+
+interests:
+  - Reading books (fiction and non-fiction)
+  - Learning to play the guitar
+  - DIY projects (building with salvaged electronics and repairing old devices)
+  - Budding coffee connoisseur
+
+    
 ---
 

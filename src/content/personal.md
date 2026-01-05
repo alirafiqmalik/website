@@ -6,7 +6,7 @@ email: ahmalik@umass.edu
 location: Amherst, MA
 profileImage: /img/ali.jpg
 socials:
-  github: https://github.com/alihamzamalik
+  github: https://github.com/alirafiqmalik
   linkedin: https://linkedin.com/in/alihamzamalik
   # scholar: https://scholar.google.com/citations?user=alihamzamalik
 ---

@@ -1,11 +1,11 @@
 ---
 researchInterests:
   - title: Formal Verification
-    description: Proving correctness of software and hardware systems
-  - title: Automated Reasoning
-    description: SAT/SMT solvers and automated theorem proving
+    description: Symbolic execution, model checking (TLA+, nuXMV, STORM), and theorem proving (Coq, Lean)
   - title: Security Analysis
-    description: Verification of cryptographic protocols and secure systems
+    description: Verification of cryptographic protocols, quantum key distribution, and banking system security
+  - title: Generative AI/ML
+    description: Fine-tuning (SFT, DPO, RLHF), RAG, Agentic AI, and specification-aware approaches
   # - title: Type Systems
   #   description: Dependent types and type-driven development
   # - title: Program Synthesis
