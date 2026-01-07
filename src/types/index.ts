@@ -125,11 +125,16 @@ export interface CVData {
     email: string;
     location: string;
     website?: string;
+    linkedin?: string;
+    github?: string;
+    scholar?: string;
+    twitter?: string;
   };
   education: Education[];
   experience: Experience[];
   skills: SkillCategory[];
   awards: Award[];
+  interests: string[];
 }
 
 export interface HomeData {

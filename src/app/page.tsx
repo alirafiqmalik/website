@@ -90,9 +90,9 @@ export default function HomePage() {
                 <GraduationCap size={20} />
               </a>
             )}
-            {personal.socials?.website && (
+            {personal.website && (
               <a
-                href={personal.socials.website}
+                href={personal.website}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-primary"
