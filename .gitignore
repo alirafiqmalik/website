@@ -7,7 +7,7 @@ pnpm-debug.log*
 
 # Next.js
 .next/
-out/
+# out/
 build/
 dist/
 
